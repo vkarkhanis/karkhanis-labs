@@ -1,0 +1,8 @@
+{
+  "name": "karkhanis-labs-site",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "firebase deploy --only hosting",
+    "preview": "firebase hosting:channel:deploy preview"
+  }
+}

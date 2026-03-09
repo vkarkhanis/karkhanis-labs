@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FAQ | Karkhanis Labs</title>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <style>
+          body {
+              font-family: 'Inter', sans-serif;
+              background: #f6f8fb;
+              margin: 0;
+              color: #1f2937;
+          }
+
+          .container {
+              max-width: 900px;
+              margin: auto;
+              padding: 60px 20px;
+          }
+
+          h1 {
+              font-size: 42px;
+              margin-bottom: 10px;
+              text-align: center;
+          }
+
+          .subtitle {
+              text-align: center;
+              color: #6b7280;
+              margin-bottom: 50px;
+          }
+
+          .faq-item {
+              background: white;
+              border-radius: 10px;
+              padding: 22px;
+              margin-bottom: 18px;
+              box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+              cursor: pointer;
+              transition: all .2s ease;
+          }
+
+          .faq-item:hover {
+              transform: translateY(-2px);
+          }
+
+          .question {
+              font-weight: 600;
+              font-size: 17px;
+          }
+
+          .answer {
+              margin-top: 12px;
+              color: #4b5563;
+              display: none;
+          }
+
+          .faq-item.active .answer {
+              display: block;
+          }
+
+          .footer-space {
+              margin-top: 80px;
+          }
+      </style>
+  </head>
+
+  <body>
+
+      <div class="container">
+          <h1>Frequently Asked Questions</h1>
+          <div class="subtitle">
+              Common questions about Karkhanis Labs and our products
+          </div>
+          <div class="faq-item">
+              <div class="question">What is Karkhanis Labs?</div>
+              <div class="answer">
+                  Karkhanis Labs builds modern software tools that simplify shared financial coordination and
+                  collaboration.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="question">What products does Karkhanis Labs develop?</div>
+              <div class="answer">
+                  Karkhanis Labs develops multiple software applications. Each product has its own guide and documentation
+                  available under the Guide section.
+              </div>
+          </div>
+
+          <div class="faq-item">
+              <div class="question">Does Karkhanis Labs process payments?</div>
+              <div class="answer">
+                  Our applications help coordinate and track transactions between users. Actual payments occur through
+                  third-party payment providers such as UPI or bank transfers.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="question">Where can I find guides for specific products?</div>
+              <div class="answer">
+                  Each product has its own documentation inside the Guide section. For example, the Traxettle guide
+                  explains how to manage shared expenses.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="question">How can I contact support?</div>
+              <div class="answer">
+                  You can contact support by emailing <strong>support@karkhanislabs.com</strong>.
+              </div>
+          </div>
+      </div>
+
+      <div id="footer" class="footer-space"></div>
+      <script src="/assets/footer-loader.js"></script>
+      <script>
+          document.querySelectorAll(".faq-item").forEach(item => {
+              item.addEventListener("click", () => {
+                  item.classList.toggle("active");
+              });
+          });
+      </script>
+  </body>
+</html>

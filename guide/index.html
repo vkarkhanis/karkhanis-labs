@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Guide | Karkhanis Labs</title>
+
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <style>
+          body {
+              font-family: 'Inter', sans-serif;
+              background: #f6f8fb;
+              margin: 0;
+              color: #1f2937;
+          }
+
+          .container {
+              max-width: 1100px;
+              margin: auto;
+              padding: 60px 20px;
+          }
+
+          h1 {
+              font-size: 42px;
+              text-align: center;
+              margin-bottom: 12px;
+          }
+
+          .subtitle {
+              text-align: center;
+              color: #6b7280;
+              margin-bottom: 50px;
+          }
+
+          .section-title {
+              font-size: 22px;
+              margin-bottom: 20px;
+              margin-top: 40px;
+          }
+
+          .grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              gap: 22px;
+          }
+
+          .card {
+              background: white;
+              border-radius: 12px;
+              padding: 28px;
+              box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+              transition: all .2s ease;
+              text-decoration: none;
+              color: inherit;
+          }
+
+          .card:hover {
+              transform: translateY(-4px);
+              box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+          }
+
+          .card-title {
+              font-weight: 600;
+              font-size: 18px;
+              margin-bottom: 6px;
+          }
+
+          .card-desc {
+              color: #6b7280;
+              font-size: 14px;
+          }
+
+          .footer-space {
+              margin-top: 80px;
+          }
+      </style>
+
+  </head>
+
+  <body>
+
+      <div class="container">
+
+          <h1>Product Guides</h1>
+
+          <div class="subtitle">
+              Documentation and help resources for Karkhanis Labs applications
+          </div>
+
+          <h2 class="section-title">Applications</h2>
+
+          <div class="grid">
+
+              <a href="/traxettle" class="card">
+                  <div class="card-title">Traxettle</div>
+                  <div class="card-desc">
+                      Smart expense splitting for trips, events, and shared activities.
+                  </div>
+              </a>
+
+              <a href="/guide/traxettle" class="card">
+                  <div class="card-title">Traxettle Guide</div>
+                  <div class="card-desc">
+                      Learn how to create events, add expenses, and settle balances.
+                  </div>
+              </a>
+
+          </div>
+
+          <h2 class="section-title">Support</h2>
+
+          <div class="grid">
+
+              <a href="/guide/faq" class="card">
+                  <div class="card-title">Frequently Asked Questions</div>
+                  <div class="card-desc">
+                      Answers to common questions about our products and services.
+                  </div>
+              </a>
+
+              <a href="/guide/privacy" class="card">
+                  <div class="card-title">Privacy Policy</div>
+                  <div class="card-desc">
+                      How we collect, use and protect your data.
+                  </div>
+              </a>
+
+              <a href="/guide/terms" class="card">
+                  <div class="card-title">Terms of Service</div>
+                  <div class="card-desc">
+                      Rules and conditions for using our applications.
+                  </div>
+              </a>
+
+          </div>
+
+      </div>
+
+      <div id="footer" class="footer-space"></div>
+
+      <script src="/assets/footer-loader.js"></script>
+
+</body>
+
+</html>

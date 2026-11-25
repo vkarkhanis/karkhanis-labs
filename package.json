@@ -2,6 +2,7 @@
   "name": "karkhanis-labs-site",
   "version": "1.0.0",
   "scripts": {
+    "smtp:check": "node scripts/check-traxettle-smtp.js",
     "deploy": "firebase deploy --only hosting",
     "preview": "firebase hosting:channel:deploy preview"
   }

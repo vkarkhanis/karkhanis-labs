@@ -141,6 +141,91 @@
               margin-top: 60px;
           }
 
+          .availability-panel {
+              max-width: 760px;
+              margin: 36px auto 0;
+              padding: 28px;
+              border-radius: 24px;
+              background: linear-gradient(135deg, #ffffff, #f8fbff);
+              border: 1px solid #dbe7ff;
+              box-shadow: 0 18px 50px rgba(37, 99, 235, 0.12);
+          }
+
+          .availability-panel p {
+              color: #4b5563;
+              margin-bottom: 20px;
+          }
+
+          .availability-grid {
+              display: grid;
+              gap: 14px;
+              text-align: left;
+          }
+
+          .availability-item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              padding: 16px 18px;
+              border-radius: 16px;
+              background: linear-gradient(135deg, #eff6ff, #f8fafc);
+              border: 1px solid #dbeafe;
+              color: #1f2937;
+              text-decoration: none;
+              transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+          }
+
+          .availability-item:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 14px 28px rgba(37, 99, 235, 0.14);
+              border-color: #93c5fd;
+          }
+
+          .availability-item.coming-soon {
+              background: #f8fafc;
+              border-color: #e5e7eb;
+              cursor: default;
+          }
+
+          .availability-item.coming-soon:hover {
+              transform: none;
+              box-shadow: none;
+              border-color: #e5e7eb;
+          }
+
+          .availability-copy strong {
+              display: block;
+              font-size: 16px;
+              margin-bottom: 3px;
+          }
+
+          .availability-copy span {
+              display: block;
+              font-size: 14px;
+              color: #6b7280;
+          }
+
+          .availability-badge {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              min-width: 110px;
+              padding: 8px 14px;
+              border-radius: 999px;
+              background: #dbeafe;
+              color: #1d4ed8;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: .04em;
+              text-transform: uppercase;
+          }
+
+          .availability-item.coming-soon .availability-badge {
+              background: #e5e7eb;
+              color: #4b5563;
+          }
+
           footer {
               margin-top: 100px;
               text-align: center;
@@ -326,7 +411,7 @@
           </div>
 
           <div>
-              <img src="/traxettle/images/traxettle-hero.png" />
+              <img src="/traxettle/images/traxettle-hero-live.png" />
           </div>
       </section>
 
@@ -529,15 +614,39 @@
           </section>
 
           <section class="section download">
-              <h2>Coming Soon</h2>
+              <h2>Get Traxettle</h2>
 
-              <p>
-                  Traxettle mobile apps will be available soon on:
-                  <br><br>
-                  Android – Google Play Store
-                  <br>
-                  iOS – Apple App Store
-              </p>
+              <div class="availability-panel">
+                  <p>
+                      Choose the best way to access Traxettle today on Android, iPhone or the web.
+                  </p>
+
+                  <div class="availability-grid">
+                      <a class="availability-item" href="https://play.google.com/store/apps/details?id=com.traxettle.app" target="_blank" rel="noopener noreferrer">
+                          <div class="availability-copy">
+                              <strong>Google Play Store</strong>
+                              <span>Download the Android app</span>
+                          </div>
+                          <span class="availability-badge">Live</span>
+                      </a>
+
+                      <a class="availability-item" href="https://traxettle-prod.web.app/" target="_blank" rel="noopener noreferrer">
+                          <div class="availability-copy">
+                              <strong>Web App</strong>
+                              <span>Use Traxettle instantly in your browser</span>
+                          </div>
+                          <span class="availability-badge">Live</span>
+                      </a>
+
+                      <a class="availability-item" href="https://apps.apple.com/app/id6823113088" target="_blank" rel="noopener noreferrer">
+                          <div class="availability-copy">
+                              <strong>Apple App Store</strong>
+                              <span>Download the iPhone app</span>
+                          </div>
+                          <span class="availability-badge">Live</span>
+                      </a>
+                  </div>
+              </div>
 
               <a class="button" href="/">
                   Visit Karkhanis Labs

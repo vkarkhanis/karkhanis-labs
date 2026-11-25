@@ -105,6 +105,81 @@
             margin-bottom: 10px;
         }
 
+        .product ul {
+            margin: 18px 0 24px;
+            padding-left: 18px;
+        }
+
+        .availability {
+            margin-top: 22px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .availability-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f8fafc, #eef4ff);
+            border: 1px solid #dbe7ff;
+            text-decoration: none;
+            color: #1f2937;
+            transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+        }
+
+        .availability-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(37, 99, 235, 0.12);
+            border-color: #bfdbfe;
+        }
+
+        .availability-item.coming-soon {
+            background: #f8fafc;
+            border-color: #e5e7eb;
+            cursor: default;
+        }
+
+        .availability-item.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+            border-color: #e5e7eb;
+        }
+
+        .availability-copy strong {
+            display: block;
+            font-size: 15px;
+        }
+
+        .availability-copy span {
+            display: block;
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 98px;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+        }
+
+        .availability-item.coming-soon .availability-badge {
+            background: #e5e7eb;
+            color: #4b5563;
+        }
+
         .badge {
             display: inline-block;
             background: #2563eb;
@@ -214,7 +289,7 @@
 
                 <div class="product">
 
-                    <h3>Traxettle <span class="badge">Launching Soon</span></h3>
+                    <h3>Traxettle</h3>
 
                     <p>
 
@@ -231,12 +306,33 @@
 
                     </ul>
 
-                    <p>
+                    <div class="availability">
 
-                        Google Play Store – Coming Soon<br>
-                        Apple App Store – Coming Soon
+                        <a class="availability-item" href="https://play.google.com/store/apps/details?id=com.traxettle.app" target="_blank" rel="noopener noreferrer">
+                            <div class="availability-copy">
+                                <strong>Google Play Store</strong>
+                                <span>Install the Android app</span>
+                            </div>
+                            <span class="availability-badge">Live</span>
+                        </a>
 
-                    </p>
+                        <a class="availability-item" href="https://traxettle-prod.web.app/" target="_blank" rel="noopener noreferrer">
+                            <div class="availability-copy">
+                                <strong>Web App</strong>
+                                <span>Open Traxettle in your browser</span>
+                            </div>
+                            <span class="availability-badge">Live</span>
+                        </a>
+
+                        <a class="availability-item" href="https://apps.apple.com/app/id6823113088" target="_blank" rel="noopener noreferrer">
+                            <div class="availability-copy">
+                                <strong>Apple App Store</strong>
+                                <span>Install the iPhone app</span>
+                            </div>
+                            <span class="availability-badge">Live</span>
+                        </a>
+
+                    </div>
 
                     <a class="button" href="/traxettle">
                         View Product
